@@ -11,10 +11,10 @@ namespace Pokemon_Adventures_Simple.Pokemons
     {
         public Ivysaur()
         {
-            this.Name = "Ivysaur";
-            this.HP = this.RandomHP();
-            this.Power = this.RandomPower();
-            this.Image = Resources.Ivysaur;
+            this.ชื่อ = "Ivysaur";
+            this.เลือด = this.RandomHP();
+            this.พลังโจมตี = this.RandomPower();
+            this.รูปภาพ = Resources.Ivysaur;
         }
     }
 }

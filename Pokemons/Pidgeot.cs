@@ -11,10 +11,10 @@ namespace Pokemon_Adventures_Simple.Pokemons
     {
         public Pidgeot()
         {
-            this.Name = "Pidgeot";
-            this.HP = this.RandomHP();
-            this.Power = this.RandomPower();
-            this.Image = Resources.Pidgeot;
+            this.ชื่อ = "Pidgeot";
+            this.เลือด = this.RandomHP();
+            this.พลังโจมตี = this.RandomPower();
+            this.รูปภาพ = Resources.Pidgeot;
         }
     }
 }

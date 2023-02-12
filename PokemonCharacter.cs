@@ -8,26 +8,26 @@ namespace Pokemon_Adventures_Simple
 {
     public class PokemonCharacter
     {
-        protected string Name;
-        protected int HP;
-        protected int Power;
-        protected Bitmap Image;
+        protected string ชื่อ;
+        protected int เลือด;
+        protected int พลังโจมตี;
+        protected Bitmap รูปภาพ;
 
         public string getName()
         {
-            return this.Name;
+            return this.ชื่อ;
         }
         public int GetHP()
         {
-            return this.HP;
+            return this.เลือด;
         }
         public int getPower()
         {
-            return this.Power;
+            return this.พลังโจมตี;
         }
         public Bitmap getImage()
         {
-            return this.Image;
+            return this.รูปภาพ;
         }
         public int RandomHP()
         {
@@ -39,7 +39,7 @@ namespace Pokemon_Adventures_Simple
         }
         public void SetHP(int value)
         {
-            HP = value;
+            เลือด = value;
         }
     }
 }

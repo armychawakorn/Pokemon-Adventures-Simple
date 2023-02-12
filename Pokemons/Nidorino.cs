@@ -11,10 +11,10 @@ namespace Pokemon_Adventures_Simple.Pokemons
     {
         public Nidorino()
         {
-            this.Name = "Nidorino";
-            this.HP = this.RandomHP() * 3;
-            this.Power = this.RandomPower();
-            this.Image = Resources.Nidorino;
+            this.ชื่อ = "Nidorino";
+            this.เลือด = this.RandomHP() * 3;
+            this.พลังโจมตี = this.RandomPower();
+            this.รูปภาพ = Resources.Nidorino;
         }
     }
 }

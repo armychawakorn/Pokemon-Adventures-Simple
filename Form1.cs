@@ -24,7 +24,7 @@ namespace Pokemon_Adventures_Simple
             ListOfPokemons.Add(new Drowzee());
             // End
 
-            //Init first pokemon to Game
+            //Set first pokemon to Game
             Pokemon = ListOfPokemons[0];
             Pokemon_Image.Image = Pokemon.getImage();
             PokemonAttack_TextBox.Text = Pokemon.getPower().ToString();
@@ -34,6 +34,7 @@ namespace Pokemon_Adventures_Simple
 
         private void Pokemon1_Selecter_Click(object sender, EventArgs e)
         {
+            //Set Pokemon1 to the game
             Pokemon = ListOfPokemons[0];
             Pokemon_Image.Image = Pokemon.getImage();
             PokemonAttack_TextBox.Text = Pokemon.getPower().ToString();
@@ -42,6 +43,7 @@ namespace Pokemon_Adventures_Simple
 
         private void Pokemon2Selecter_Click(object sender, EventArgs e)
         {
+            //Set Pokemon2 to the game
             Pokemon = ListOfPokemons[1];
             Pokemon_Image.Image = Pokemon.getImage();
             PokemonAttack_TextBox.Text = Pokemon.getPower().ToString();
@@ -50,6 +52,7 @@ namespace Pokemon_Adventures_Simple
 
         private void Pokemon3_Selecter_Click(object sender, EventArgs e)
         {
+            //Set Pokemon3 to the game
             Pokemon = ListOfPokemons[2];
             Pokemon_Image.Image = Pokemon.getImage();
             PokemonAttack_TextBox.Text = Pokemon.getPower().ToString();
@@ -58,6 +61,7 @@ namespace Pokemon_Adventures_Simple
 
         private void Pokemon4_Selecter_Click(object sender, EventArgs e)
         {
+            //Set Pokemon4 to the game
             Pokemon = ListOfPokemons[3];
             Pokemon_Image.Image = Pokemon.getImage();
             PokemonAttack_TextBox.Text = Pokemon.getPower().ToString();
@@ -66,12 +70,15 @@ namespace Pokemon_Adventures_Simple
 
         private void VS_Button_Click(object sender, EventArgs e)
         {
-            Start_Battle();
-            if (Monster.GetHP() < 0)
+            //Battle Button
+            Start_Battle(); // Start Battle Algorithm
+
+            
+            if (Monster.GetHP() < 0) //Check MonsterHP
             {
                 MonsterHP_TextBox.Text = "0";
                 MessageBox.Show("คุณชนะแล้ว");
-            }else if(Pokemon.GetHP() < 0)
+            }else if(Pokemon.GetHP() < 0) // Check PokemonHP
             {
                 PokemonHP_TextBox.Text = "0";
                 MessageBox.Show(Pokemon.getName() + " ของคุณตายแล้ว");
@@ -80,6 +87,7 @@ namespace Pokemon_Adventures_Simple
             }
         }
 
+        // Start Battle Algorithm
         void Start_Battle()
         {
             if(Pokemon.GetHP() > 0 && Monster.GetHP() > 0)

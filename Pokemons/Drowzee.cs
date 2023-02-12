@@ -11,10 +11,10 @@ namespace Pokemon_Adventures_Simple.Pokemons
     {
         public Drowzee()
         {
-            this.Name = "Drowzee";
-            this.HP = this.RandomHP();
-            this.Power = this.RandomPower();
-            this.Image = Resources.Drowzee;
+            this.ชื่อ = "Drowzee";
+            this.เลือด = this.RandomHP();
+            this.พลังโจมตี = this.RandomPower();
+            this.รูปภาพ = Resources.Drowzee;
         }
     }
 }

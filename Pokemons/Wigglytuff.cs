@@ -11,10 +11,10 @@ namespace Pokemon_Adventures_Simple.Pokemons
     {
         public Wigglytuff()
         {
-            this.Name = "Wigglytuff";
-            this.HP = this.RandomHP();
-            this.Power = this.RandomPower();
-            this.Image = Resources.Wigglytuff;
+            this.ชื่อ = "Wigglytuff";
+            this.เลือด = this.RandomHP();
+            this.พลังโจมตี = this.RandomPower();
+            this.รูปภาพ = Resources.Wigglytuff;
         }
     }
 }
