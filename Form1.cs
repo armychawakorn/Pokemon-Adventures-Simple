@@ -77,12 +77,13 @@ namespace Pokemon_Adventures_Simple
             if (Monster.GetHP() < 0) //Check MonsterHP
             {
                 MonsterHP_TextBox.Text = "0";
+                Monster.SetHP(0);
                 MessageBox.Show("คุณชนะแล้ว");
             }else if(Pokemon.GetHP() < 0) // Check PokemonHP
             {
                 PokemonHP_TextBox.Text = "0";
-                MessageBox.Show(Pokemon.getName() + " ของคุณตายแล้ว");
                 Pokemon.SetHP(0);
+                MessageBox.Show(Pokemon.getName() + " ของคุณตายแล้ว");
                 return;
             }
         }
