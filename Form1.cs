@@ -90,7 +90,7 @@ namespace Pokemon_Adventures_Simple
         // Start Battle Algorithm
         void Start_Battle()
         {
-            if(Pokemon.GetHP() > 0 && Monster.GetHP() > 0)
+            if(Pokemon.GetHP() > 0 && Monster.GetHP() > 0) //ถ้าPokemonและMonsterทั้งคู่มีเลือดมากกว่า 0 สามารถBattleกันได้
             {
                 Pokemon.SetHP(Pokemon.GetHP() - Monster.getPower());
                 PokemonHP_TextBox.Text = Pokemon.GetHP().ToString();
